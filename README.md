@@ -1,11 +1,11 @@
 # Progetto WoT - Riscaldamento automatizzato
 
-### Obiettivo del progetto
+## Obiettivo del progetto
 
 L'obiettivo del progetto è avere sensori di temperatura in più stanze, esposti come “Things” WoT, in modo che client WoT possano leggere i dati, ricevere eventi e controllare il riscaldamento in modo standardizzato.
 
 
-### Funzionalità previste
+## Funzionalità previste
 
 - Monitoraggio in tempo reale della temperatura in ogni stanza
 
@@ -16,7 +16,7 @@ L'obiettivo del progetto è avere sensori di temperatura in più stanze, esposti
 - Automazione semplice del riscaldamento in base ai valori misurati. Ogni stanza ha un termostato che si accende/spegne in base alla temperatura.
 
 
-### Architettura del sistema
+## Architettura del sistema
 
 - **Things** (dispositivi WoT)
 
@@ -58,14 +58,14 @@ Ogni Thing espone una Thing Description (TD) che definisce:
   - temperature change : quando si cambia una temperatura desiderata in una stanza.
     
 
- ### Comunicazione
+ ## Comunicazione
 
 - Protocolli Web: HTTP e MQTT
 
 - I client WoT interagiscono leggendo le Thing Description, scoprendo automaticamente le funzionalità dei dispositivi
 
 
-### Tecnologie utilizzate
+## Tecnologie utilizzate
 
 - Backend / Things: Node.js, node-wot, Typescript
 
@@ -75,7 +75,7 @@ Ogni Thing espone una Thing Description (TD) che definisce:
   
 
 # Passaggi Installazione
-### Windows
+## Windows
 - Installa Node.js
 - Vai sul sito *https://mosquitto.org/download/*
 - Scarica la versione **mosquitto-2.1.2-install-windows-x64.exe**
@@ -93,7 +93,7 @@ Ogni Thing espone una Thing Description (TD) che definisce:
 - Poi apri un terzo terminale senza chiudere quello di prima e fai: **node dist/heating-logic.js**
 - Poi direttamente dalla cartella apri il file **dashboard.html**
 
-### macOS
+## macOS
 - Installa Node.js
 - Da terminale digita: **brew install mosquitto**
 - Avvia il broker Mosquitto: **brew services start mosquitto**
